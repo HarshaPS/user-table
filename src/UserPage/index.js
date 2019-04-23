@@ -9,7 +9,7 @@ class UserProfile extends Component {
         return (
             <div className="col-xs-12 col-sm-9">
                 <h4 className="blue">
-                    <span className="middle">{user.first_name}</span>
+                    <span className="middle">{user.first_name} {user.last_name}</span>
                 </h4>
     
                 <div className="profile-user-info">
