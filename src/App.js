@@ -53,7 +53,7 @@ class App extends Component
       </thead>);
 
     const { currentPageUsers } = this.state;
-    const mousePointer = { cursor: pointer };
+    const mousePointer = { cursor: 'pointer' };
       
     return (
     <div className="App">
