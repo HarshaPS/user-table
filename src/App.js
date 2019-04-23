@@ -53,6 +53,7 @@ class App extends Component
       </thead>);
 
     const { currentPageUsers } = this.state;
+    const mousePointer = { cursor: pointer };
       
     return (
     <div className="App">
@@ -60,8 +61,8 @@ class App extends Component
         {tableHeaders}
           {currentPageUsers.map(row =>
             (<tr onClick={this.userProfilePage}>
-                <td id={row.id}>{row.first_name}</td>
-                <td id={row.id}>{row.last_name}</td>
+                <td id={row.id} style={mousePointer}>{row.first_name}</td>
+                <td id={row.id} style={mousePointer}>{row.last_name}</td>
                 <td>{row.age}</td>
                 <td>{row.company_name}</td>
                 <td>{row.city}</td>
